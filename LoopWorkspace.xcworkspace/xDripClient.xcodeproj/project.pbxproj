@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A53987527E0C10E00077BAF /* xDripStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53987427E0C10E00077BAF /* xDripStatusView.swift */; };
+		0A53987727E0C13900077BAF /* xDripStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53987627E0C13900077BAF /* xDripStatusModel.swift */; };
+		0A53987927E0C90500077BAF /* xDripClient.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84752E8226ED0FFE009FD801 /* xDripClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A53987A27E0C90B00077BAF /* xDripClientUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AA1BFD327E030190098B986 /* xDripClientUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A53987C27E0CA0100077BAF /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53987B27E0CA0100077BAF /* Framework.swift */; };
+		0A53987D27E0CA0100077BAF /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53987B27E0CA0100077BAF /* Framework.swift */; };
+		0A53987F27E0CA2600077BAF /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53987E27E0CA2600077BAF /* UIImage.swift */; };
+		0A53988127E0CA5200077BAF /* xDripClientUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A53988027E0CA5200077BAF /* xDripClientUI.xcassets */; };
+		0A53988327E0CCB700077BAF /* xDripAppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53988227E0CCB700077BAF /* xDripAppGroup.swift */; };
+		0A53988527E0ECE100077BAF /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53988427E0ECE100077BAF /* LocalizedString.swift */; };
+		0A53988627E0ECE200077BAF /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53988427E0ECE100077BAF /* LocalizedString.swift */; };
+		0A53988927E0EFE100077BAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A53988727E0EFE100077BAF /* Localizable.strings */; };
+		0AA1BFC627E02D770098B986 /* xDripClientPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFC427E02D770098B986 /* xDripClientPlugin.swift */; };
+		0AA1BFC827E02DC40098B986 /* xDripCGMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFC727E02DC40098B986 /* xDripCGMManager.swift */; };
+		0AA1BFC927E02ECB0098B986 /* xDripClientPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1BFC327E02D770098B986 /* xDripClientPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA1BFCD27E02F540098B986 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1BFCC27E02F530098B986 /* HealthKit.framework */; };
+		0AA1BFDA27E0304B0098B986 /* xDripClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84752E8226ED0FFE009FD801 /* xDripClient.framework */; };
+		0AA1BFE027E031060098B986 /* xDripClientUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA1BFDF27E031060098B986 /* xDripClientUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA1BFE327E032920098B986 /* xDripCGMManager+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFE127E032910098B986 /* xDripCGMManager+UI.swift */; };
+		0AA1BFE427E032920098B986 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFE227E032910098B986 /* UICoordinator.swift */; };
+		0AA1BFEE27E0354B0098B986 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFED27E0354B0098B986 /* OSLog.swift */; };
+		0AA1BFEF27E0357E0098B986 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFED27E0354B0098B986 /* OSLog.swift */; };
+		0AA1BFF227E035E60098B986 /* xDripClientUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1BFD327E030190098B986 /* xDripClientUI.framework */; };
+		0AA1BFF427E03ACE0098B986 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFED27E0354B0098B986 /* OSLog.swift */; };
+		0AA1BFF627E0BCE00098B986 /* xDripReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFF527E0BCE00098B986 /* xDripReading.swift */; };
+		0AA1BFF827E0BD9B0098B986 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFF727E0BD9B0098B986 /* HKUnit.swift */; };
+		0AA1BFF927E0BD9C0098B986 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1BFF727E0BD9B0098B986 /* HKUnit.swift */; };
+		84752E9326ED0FFE009FD801 /* xDripClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 84752E8526ED0FFE009FD801 /* xDripClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		847530F626ED65DD009FD801 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847530F426ED65DD009FD801 /* LoopKit.framework */; };
+		847530F826ED65DD009FD801 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847530F526ED65DD009FD801 /* LoopKitUI.framework */; };
+		C1D27A1527908DC600C41EBA /* xDripClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84752E8226ED0FFE009FD801 /* xDripClient.framework */; };
+		F87C2BB827E675810053D946 /* BluetoothTransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C2BB727E675810053D946 /* BluetoothTransmitter.swift */; };
+		F87C2BBA27E68CAA0053D946 /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C2BB927E68CAA0053D946 /* Trace.swift */; };
+		F87C2BBD27E68F9D0053D946 /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C2BBC27E68F9D0053D946 /* StringProtocol.swift */; };
+		F87C2BBF27E7DEE70053D946 /* CBManagerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C2BBE27E7DEE70053D946 /* CBManagerState.swift */; };
+		F87C2BC127EA74260053D946 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C2BC027EA74260053D946 /* URL.swift */; };
+		F8CB9E65282FDB20008E8EA1 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CB9E63282FDABD008E8EA1 /* MailView.swift */; };
+		F8CB9E67282FE343008E8EA1 /* ConstantsxDripClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CB9E66282FE343008E8EA1 /* ConstantsxDripClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AA1BFDC27E0304B0098B986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84752E7926ED0FFE009FD801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84752E8126ED0FFE009FD801;
+			remoteInfo = xDripClient;
+		};
+		0AA1BFF027E035DF0098B986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84752E7926ED0FFE009FD801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA1BFD227E030190098B986;
+			remoteInfo = xDripClientUI;
+		};
+		C187C19F279086FF006E3557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84752E7926ED0FFE009FD801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84752E8126ED0FFE009FD801;
+			remoteInfo = OmniBLE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A53987827E0C8DE00077BAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A53987A27E0C90B00077BAF /* xDripClientUI.framework in CopyFiles */,
+				0A53987927E0C90500077BAF /* xDripClient.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A53987427E0C10E00077BAF /* xDripStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDripStatusView.swift; sourceTree = "<group>"; };
+		0A53987627E0C13900077BAF /* xDripStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDripStatusModel.swift; sourceTree = "<group>"; };
+		0A53987B27E0CA0100077BAF /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		0A53987E27E0CA2600077BAF /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		0A53988027E0CA5200077BAF /* xDripClientUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = xDripClientUI.xcassets; sourceTree = "<group>"; };
+		0A53988227E0CCB700077BAF /* xDripAppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDripAppGroup.swift; sourceTree = "<group>"; };
+		0A53988427E0ECE100077BAF /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		0A53988827E0EFE100077BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0A5398AE27E0F03600077BAF /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0A5398AF27E0F04A00077BAF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0A5398B027E0F05A00077BAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0A5398B327E0F0B900077BAF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AA1BFC327E02D770098B986 /* xDripClientPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xDripClientPlugin.h; sourceTree = "<group>"; };
+		0AA1BFC427E02D770098B986 /* xDripClientPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xDripClientPlugin.swift; sourceTree = "<group>"; };
+		0AA1BFC727E02DC40098B986 /* xDripCGMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDripCGMManager.swift; sourceTree = "<group>"; };
+		0AA1BFCC27E02F530098B986 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		0AA1BFD327E030190098B986 /* xDripClientUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xDripClientUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA1BFDF27E031060098B986 /* xDripClientUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xDripClientUI.h; sourceTree = "<group>"; };
+		0AA1BFE127E032910098B986 /* xDripCGMManager+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "xDripCGMManager+UI.swift"; sourceTree = "<group>"; };
+		0AA1BFE227E032910098B986 /* UICoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
+		0AA1BFE527E032EC0098B986 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA1BFE927E0344A0098B986 /* carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = carthage.sh; sourceTree = "<group>"; };
+		0AA1BFEA27E0344A0098B986 /* copy-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "copy-frameworks.sh"; sourceTree = "<group>"; };
+		0AA1BFED27E0354B0098B986 /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
+		0AA1BFF527E0BCE00098B986 /* xDripReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDripReading.swift; sourceTree = "<group>"; };
+		0AA1BFF727E0BD9B0098B986 /* HKUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUnit.swift; sourceTree = "<group>"; };
+		84752E8226ED0FFE009FD801 /* xDripClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xDripClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84752E8526ED0FFE009FD801 /* xDripClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xDripClient.h; sourceTree = "<group>"; };
+		84752E8626ED0FFE009FD801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847530F426ED65DD009FD801 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847530F526ED65DD009FD801 /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91B2DEB276E1E5E001B0E95 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C187C197279086A8006E3557 /* xDripClientPlugin.loopplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xDripClientPlugin.loopplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		C187C1A427908B1C006E3557 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87C2BB727E675810053D946 /* BluetoothTransmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothTransmitter.swift; sourceTree = "<group>"; };
+		F87C2BB927E68CAA0053D946 /* Trace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trace.swift; sourceTree = "<group>"; };
+		F87C2BBC27E68F9D0053D946 /* StringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProtocol.swift; sourceTree = "<group>"; };
+		F87C2BBE27E7DEE70053D946 /* CBManagerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBManagerState.swift; sourceTree = "<group>"; };
+		F87C2BC027EA74260053D946 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		F8CB9E63282FDABD008E8EA1 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		F8CB9E66282FE343008E8EA1 /* ConstantsxDripClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsxDripClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AA1BFD027E030190098B986 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA1BFDA27E0304B0098B986 /* xDripClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84752E7F26ED0FFE009FD801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA1BFCD27E02F540098B986 /* HealthKit.framework in Frameworks */,
+				847530F626ED65DD009FD801 /* LoopKit.framework in Frameworks */,
+				847530F826ED65DD009FD801 /* LoopKitUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C187C194279086A8006E3557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA1BFF227E035E60098B986 /* xDripClientUI.framework in Frameworks */,
+				C1D27A1527908DC600C41EBA /* xDripClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AA1BFD427E030190098B986 /* xDripClientUI */ = {
+			isa = PBXGroup;
+			children = (
+				F8CB9E63282FDABD008E8EA1 /* MailView.swift */,
+				0A53988727E0EFE100077BAF /* Localizable.strings */,
+				0AA1BFE227E032910098B986 /* UICoordinator.swift */,
+				0AA1BFE127E032910098B986 /* xDripCGMManager+UI.swift */,
+				0A53987427E0C10E00077BAF /* xDripStatusView.swift */,
+				0A53987627E0C13900077BAF /* xDripStatusModel.swift */,
+				0AA1BFDF27E031060098B986 /* xDripClientUI.h */,
+				0A53988027E0CA5200077BAF /* xDripClientUI.xcassets */,
+				0AA1BFE527E032EC0098B986 /* Info.plist */,
+			);
+			path = xDripClientUI;
+			sourceTree = "<group>";
+		};
+		0AA1BFE827E0344A0098B986 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1BFE927E0344A0098B986 /* carthage.sh */,
+				0AA1BFEA27E0344A0098B986 /* copy-frameworks.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		84752E7826ED0FFE009FD801 = {
+			isa = PBXGroup;
+			children = (
+				F87C2BBB27E68F330053D946 /* Extensions */,
+				A91B2DEB276E1E5E001B0E95 /* README.md */,
+				84752EE926ED1402009FD801 /* Common */,
+				84752E8426ED0FFE009FD801 /* xDripClient */,
+				0AA1BFD427E030190098B986 /* xDripClientUI */,
+				C187C198279086A8006E3557 /* xDripClientPlugin */,
+				84752E8326ED0FFE009FD801 /* Products */,
+				84752E9C26ED10A0009FD801 /* Frameworks */,
+				0AA1BFE827E0344A0098B986 /* Scripts */,
+			);
+			sourceTree = "<group>";
+		};
+		84752E8326ED0FFE009FD801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84752E8226ED0FFE009FD801 /* xDripClient.framework */,
+				C187C197279086A8006E3557 /* xDripClientPlugin.loopplugin */,
+				0AA1BFD327E030190098B986 /* xDripClientUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84752E8426ED0FFE009FD801 /* xDripClient */ = {
+			isa = PBXGroup;
+			children = (
+				F87C2BB727E675810053D946 /* BluetoothTransmitter.swift */,
+				0AA1BFF527E0BCE00098B986 /* xDripReading.swift */,
+				0AA1BFC727E02DC40098B986 /* xDripCGMManager.swift */,
+				0A53988227E0CCB700077BAF /* xDripAppGroup.swift */,
+				84752E8526ED0FFE009FD801 /* xDripClient.h */,
+				84752E8626ED0FFE009FD801 /* Info.plist */,
+			);
+			path = xDripClient;
+			sourceTree = "<group>";
+		};
+		84752E9C26ED10A0009FD801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1BFCC27E02F530098B986 /* HealthKit.framework */,
+				847530F426ED65DD009FD801 /* LoopKit.framework */,
+				847530F526ED65DD009FD801 /* LoopKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84752EE926ED1402009FD801 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1BFED27E0354B0098B986 /* OSLog.swift */,
+				0AA1BFF727E0BD9B0098B986 /* HKUnit.swift */,
+				0A53987B27E0CA0100077BAF /* Framework.swift */,
+				0A53987E27E0CA2600077BAF /* UIImage.swift */,
+				0A53988427E0ECE100077BAF /* LocalizedString.swift */,
+				F87C2BB927E68CAA0053D946 /* Trace.swift */,
+				F8CB9E66282FE343008E8EA1 /* ConstantsxDripClient.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C187C198279086A8006E3557 /* xDripClientPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1BFC327E02D770098B986 /* xDripClientPlugin.h */,
+				0AA1BFC427E02D770098B986 /* xDripClientPlugin.swift */,
+				C187C1A427908B1C006E3557 /* Info.plist */,
+			);
+			path = xDripClientPlugin;
+			sourceTree = "<group>";
+		};
+		F87C2BBB27E68F330053D946 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F87C2BC027EA74260053D946 /* URL.swift */,
+				F87C2BBE27E7DEE70053D946 /* CBManagerState.swift */,
+				F87C2BBC27E68F9D0053D946 /* StringProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AA1BFCE27E030190098B986 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA1BFE027E031060098B986 /* xDripClientUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84752E7D26ED0FFE009FD801 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84752E9326ED0FFE009FD801 /* xDripClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C187C192279086A8006E3557 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA1BFC927E02ECB0098B986 /* xDripClientPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AA1BFD227E030190098B986 /* xDripClientUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA1BFD727E0301A0098B986 /* Build configuration list for PBXNativeTarget "xDripClientUI" */;
+			buildPhases = (
+				0AA1BFCE27E030190098B986 /* Headers */,
+				0AA1BFCF27E030190098B986 /* Sources */,
+				0AA1BFD027E030190098B986 /* Frameworks */,
+				0AA1BFD127E030190098B986 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AA1BFDD27E0304B0098B986 /* PBXTargetDependency */,
+			);
+			name = xDripClientUI;
+			productName = xDripClientUI;
+			productReference = 0AA1BFD327E030190098B986 /* xDripClientUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84752E8126ED0FFE009FD801 /* xDripClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84752E9626ED0FFE009FD801 /* Build configuration list for PBXNativeTarget "xDripClient" */;
+			buildPhases = (
+				84752E7D26ED0FFE009FD801 /* Headers */,
+				84752E7E26ED0FFE009FD801 /* Sources */,
+				84752E7F26ED0FFE009FD801 /* Frameworks */,
+				84752E8026ED0FFE009FD801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xDripClient;
+			packageProductDependencies = (
+			);
+			productName = OmniBLE;
+			productReference = 84752E8226ED0FFE009FD801 /* xDripClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C187C196279086A8006E3557 /* xDripClientPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C187C19B279086A8006E3557 /* Build configuration list for PBXNativeTarget "xDripClientPlugin" */;
+			buildPhases = (
+				C187C192279086A8006E3557 /* Headers */,
+				0A53987827E0C8DE00077BAF /* CopyFiles */,
+				C187C193279086A8006E3557 /* Sources */,
+				C187C194279086A8006E3557 /* Frameworks */,
+				C187C195279086A8006E3557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AA1BFF127E035DF0098B986 /* PBXTargetDependency */,
+				C187C1A0279086FF006E3557 /* PBXTargetDependency */,
+			);
+			name = xDripClientPlugin;
+			productName = OmniBLEPlugin;
+			productReference = C187C197279086A8006E3557 /* xDripClientPlugin.loopplugin */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84752E7926ED0FFE009FD801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Randall Knutson";
+				TargetAttributes = {
+					0AA1BFD227E030190098B986 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					84752E8126ED0FFE009FD801 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1330;
+					};
+					C187C196279086A8006E3557 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 84752E7C26ED0FFE009FD801 /* Build configuration list for PBXProject "xDripClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				"zh-Hans",
+				ja,
+				nb,
+				es,
+				da,
+				it,
+				sv,
+				pl,
+				"pt-BR",
+				vi,
+				ru,
+				fr,
+				fi,
+				nl,
+				ro,
+			);
+			mainGroup = 84752E7826ED0FFE009FD801;
+			packageReferences = (
+			);
+			productRefGroup = 84752E8326ED0FFE009FD801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84752E8126ED0FFE009FD801 /* xDripClient */,
+				C187C196279086A8006E3557 /* xDripClientPlugin */,
+				0AA1BFD227E030190098B986 /* xDripClientUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AA1BFD127E030190098B986 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A53988127E0CA5200077BAF /* xDripClientUI.xcassets in Resources */,
+				0A53988927E0EFE100077BAF /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84752E8026ED0FFE009FD801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C187C195279086A8006E3557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AA1BFCF27E030190098B986 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A53987D27E0CA0100077BAF /* Framework.swift in Sources */,
+				0A53987F27E0CA2600077BAF /* UIImage.swift in Sources */,
+				0AA1BFE427E032920098B986 /* UICoordinator.swift in Sources */,
+				0A53987527E0C10E00077BAF /* xDripStatusView.swift in Sources */,
+				0AA1BFE327E032920098B986 /* xDripCGMManager+UI.swift in Sources */,
+				0AA1BFF927E0BD9C0098B986 /* HKUnit.swift in Sources */,
+				0AA1BFEE27E0354B0098B986 /* OSLog.swift in Sources */,
+				0A53987727E0C13900077BAF /* xDripStatusModel.swift in Sources */,
+				0A53988627E0ECE200077BAF /* LocalizedString.swift in Sources */,
+				F8CB9E65282FDB20008E8EA1 /* MailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84752E7E26ED0FFE009FD801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87C2BB827E675810053D946 /* BluetoothTransmitter.swift in Sources */,
+				0AA1BFEF27E0357E0098B986 /* OSLog.swift in Sources */,
+				0AA1BFC827E02DC40098B986 /* xDripCGMManager.swift in Sources */,
+				0AA1BFF827E0BD9B0098B986 /* HKUnit.swift in Sources */,
+				F87C2BBF27E7DEE70053D946 /* CBManagerState.swift in Sources */,
+				F87C2BBD27E68F9D0053D946 /* StringProtocol.swift in Sources */,
+				0A53988527E0ECE100077BAF /* LocalizedString.swift in Sources */,
+				F8CB9E67282FE343008E8EA1 /* ConstantsxDripClient.swift in Sources */,
+				F87C2BBA27E68CAA0053D946 /* Trace.swift in Sources */,
+				0A53987C27E0CA0100077BAF /* Framework.swift in Sources */,
+				0AA1BFF627E0BCE00098B986 /* xDripReading.swift in Sources */,
+				0A53988327E0CCB700077BAF /* xDripAppGroup.swift in Sources */,
+				F87C2BC127EA74260053D946 /* URL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C187C193279086A8006E3557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA1BFF427E03ACE0098B986 /* OSLog.swift in Sources */,
+				0AA1BFC627E02D770098B986 /* xDripClientPlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AA1BFDD27E0304B0098B986 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84752E8126ED0FFE009FD801 /* xDripClient */;
+			targetProxy = 0AA1BFDC27E0304B0098B986 /* PBXContainerItemProxy */;
+		};
+		0AA1BFF127E035DF0098B986 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AA1BFD227E030190098B986 /* xDripClientUI */;
+			targetProxy = 0AA1BFF027E035DF0098B986 /* PBXContainerItemProxy */;
+		};
+		C187C1A0279086FF006E3557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84752E8126ED0FFE009FD801 /* xDripClient */;
+			targetProxy = C187C19F279086FF006E3557 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A53988727E0EFE100077BAF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A53988827E0EFE100077BAF /* Base */,
+				0A5398AE27E0F03600077BAF /* da */,
+				0A5398AF27E0F04A00077BAF /* de */,
+				0A5398B027E0F05A00077BAF /* zh-Hans */,
+				0A5398B327E0F0B900077BAF /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AA1BFD827E0301A0098B986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = xDripClientUI/info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Julian Groen. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++17";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.xDripClientUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AA1BFD927E0301A0098B986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = xDripClientUI/info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Julian Groen. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++17";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.xDripClientUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84752E9426ED0FFE009FD801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84752E9526ED0FFE009FD801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84752E9726ED0FFE009FD801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = xDripClient/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Julian Groen. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.xDripClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		84752E9826ED0FFE009FD801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = xDripClient/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Julian Groen. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.xDripClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C187C19C279086A8006E3557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = xDripClientPlugin/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Julian Groen. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.1;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.xDripClientPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = loopplugin;
+			};
+			name = Debug;
+		};
+		C187C19D279086A8006E3557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = xDripClientPlugin/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Julian Groen. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.1;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.xDripClientPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = loopplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AA1BFD727E0301A0098B986 /* Build configuration list for PBXNativeTarget "xDripClientUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA1BFD827E0301A0098B986 /* Debug */,
+				0AA1BFD927E0301A0098B986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84752E7C26ED0FFE009FD801 /* Build configuration list for PBXProject "xDripClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84752E9426ED0FFE009FD801 /* Debug */,
+				84752E9526ED0FFE009FD801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84752E9626ED0FFE009FD801 /* Build configuration list for PBXNativeTarget "xDripClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84752E9726ED0FFE009FD801 /* Debug */,
+				84752E9826ED0FFE009FD801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C187C19B279086A8006E3557 /* Build configuration list for PBXNativeTarget "xDripClientPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C187C19C279086A8006E3557 /* Debug */,
+				C187C19D279086A8006E3557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84752E7926ED0FFE009FD801 /* Project object */;
+}
