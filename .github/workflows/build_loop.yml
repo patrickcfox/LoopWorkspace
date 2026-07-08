@@ -224,7 +224,7 @@ jobs:
           watch_title \
           2hlollipop \
           meal_days \
-          meal_week \
+          # meal_week \
           profiles \
           basal_lock \
           negative_insulin \
