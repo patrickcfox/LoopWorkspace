@@ -228,7 +228,6 @@ jobs:
           2002 \
           basal_lock \
           negative_insulin \ 
-          remote_window \
           xdrip_cgm
 
           # the final customization listed above CANNOT have a continuation character
